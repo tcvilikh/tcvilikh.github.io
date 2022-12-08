@@ -13,8 +13,11 @@ body {
   }
 }
 @media print {
+  .print-pagebreak {
+    page-break-before: always;
+  }
   body {
-    background-color: bisque;
+    background-color: #FFE4C4;
   }
 }
 header {
