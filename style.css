@@ -17,7 +17,16 @@ body {
     page-break-before: always;
   }
   body {
-    background-color: #FFE4C4;
+    background-color: #ffe4c4;
+    font-size: 2vw;
+  }
+  img {
+    max-height: 10rem;
+    height: 10rem;
+  }
+  .qr img {
+    max-height: 5rem;
+    height: 5rem;
   }
 }
 header {
@@ -30,14 +39,19 @@ h2 {
 p {
   text-align: justify;
 }
+.center {
+  text-align: center;
+}
 section {
   display: flex;
   flex-direction: column;
   max-width: 90%;
   margin: auto;
 }
-img {
+.snos {
   margin: auto;
+  max-width: 460px;
+  max-height: 30vw;
 }
 a {
   text-decoration: none;
@@ -83,22 +97,20 @@ h4 {
 
 .links a {
   display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.contacts img {
-  max-width: 65%;
-    display: block;
-    margin-top: 1rem;
+.qr img {
+  margin: inherit;
+  display: block;
+  max-width: 90%;
+  max-height: 20vw;
+  margin-top: 1rem;
 }
 
 .qr {
   display: flex;
   margin: 1rem 0;
   text-align: left;
-}
-
-.qr div {
-  width: 50%;
-  max-width: 50%;
-  margin: 0;
 }
