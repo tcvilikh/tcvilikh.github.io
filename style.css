@@ -49,16 +49,33 @@ li {
 .row {
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
-.row.columns {
-  justify-content: space-between;
-}
+
 .redtext {
   color: red;
 }
-.contacts.h4,
-.contacts.p {
+
+.links {
+  display: flex;
+}
+
+h4 {
+  text-align: left;
   margin-block-start: 0.5rem;
   margin-block-end: 0.5rem;
+}
+
+.links div {
+  text-align: left;
+}
+
+.links a {
+  display: block;
+}
+
+.qr {
+  display: flex;
+  margin: 1rem 0;
+  text-align: left;
 }
